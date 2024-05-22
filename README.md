@@ -1,3 +1,5 @@
+<img width="944" alt="portfolioimage" src="https://github.com/Vishnuvardhanl45/MyPortfolio/assets/156187202/b91615da-6236-4313-856d-b7d40d909fdc">
+
 # MyPortfolio
 
 This is an HTML file for a personal portfolio website. The website includes the following sections:
@@ -16,6 +18,3 @@ Additionally, the website integrates with Font Awesome and Ionicons for social m
 The HTML file includes several sections for each part of the website, with content placed inside appropriate tags such as headings, paragraphs, and lists. The file also includes several external links to libraries and frameworks, such as Bootstrap and Font Awesome.
 
 The website is designed to be a single-page application, with all content loaded initially and navigation handled through scrolling to different sections. This approach simplifies the website and improves performance, as there is no need to load new pages or content dynamically.
-
-
-<img width="944" alt="portfolioimage" src="https://github.com/Vishnuvardhanl45/MyPortfolio/assets/156187202/b91615da-6236-4313-856d-b7d40d909fdc">
