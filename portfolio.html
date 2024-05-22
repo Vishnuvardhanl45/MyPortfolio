@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <script src="script.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-+RDkW9dAXWCyZ6s9u6MXtnrU3wFswhtbJFyFNN6wEB2Fdw7k/4lRihB4ZqKTfkt/" crossorigin="anonymous">
+</head>
+<style>
+
+
+ 
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    .avatar {
+        margin: 0 auto;
+    }
+    .heading {
+        text-align: center; 
+        margin-left: 0; 
+        margin-top: 20px; 
+    }
+}
+
+    .container {
+        display: flex;
+        align-items: center;
+    }
+    .avatar {
+        width: 100px; 
+        height: 100px; 
+        margin-left: 20px; 
+        margin-top: 20px;
+    }
+    .heading{
+        flex: 1; 
+        margin-left: 150px;
+        margin-top: 60px;
+    }
+    .paragraph{
+        margin-left: 350px;
+    }
+    .role{
+        margin-left: 350px;
+        color: rgb(125, 95, 180);
+        
+    }
+    .social-list{
+        list-style: none;
+        padding: 0;
+        margin-left: 350px ;
+        height: 20px;
+        width: 20px;
+    }
+    .social-list{
+        display:inline-flex;
+        align-items: center;
+    }
+    .social-list li{
+    margin-top: 50px;
+    margin-right: 14px; 
+    
+   }
+   .social-list ion-icon{
+    color: rgb(125, 95, 180);
+   }
+   .social-list ion-icon{
+    font-size: 24px;
+   }
+   .about{
+    margin-left: 100vh;
+    cursor: pointer;
+    transition: color 0.5s;
+   }
+   .about:hover{
+    color:rgb(125, 95, 180);
+   }
+   .profile {
+    margin-left: 350px;
+    width: 100px;
+    height: 100px;
+   }
+
+   .aboutme {
+      display: flex;
+      align-items: center;
+   }
+   .history
+   {
+     margin-left: 100px;
+   }
+   .values
+   {
+    display: flex;
+        align-items: center;
+        margin-left: 170px;
+        gap: 70px;
+   }
+   .keys
+   {
+    display: flex;
+        align-items: center;
+        margin-left: 170px;
+        gap:30px;
+   }
+   .skills{
+    margin-left: 100vh;
+    cursor: pointer;
+    transition: color 0.5s;
+   }
+   .skills:hover{
+    color:rgb(125, 95, 180);
+   }
+
+
+
+   .skill {
+    margin-bottom: 20px;
+}
+
+
+
+.bar {
+    width: 200px;
+    margin-left: 100px; 
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    height: 7px;
+    overflow: hidden;
+}
+
+.progress {
+    background-color:rgb(125, 95, 180);
+    height: 100%;
+   
+}
+
+.percentage {
+    margin-top: 5px;
+    font-size: 14px;
+    margin-left: 130px;
+}
+
+.name {
+    font-weight: bold;
+    margin-bottom: 3px;
+    margin-left: 130px;
+}
+.bargraph
+{
+    display: flex;
+        align-items: center;
+}
+
+
+.profile{
+    margin-right: 20px;
+    margin-left: 80px;
+}
+.profile img {
+    width: 250px; 
+    height: 250px; 
+ 
+    }
+
+
+.frontend, .backend, .springboot, .fullstack {
+    background-color: white;
+    margin-left: 130px; 
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.role{
+    cursor: pointer;
+    transition: color 0.5s;
+}
+.role:hover{
+    color: rgb(170, 18, 145);
+}
+
+</style>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">#IMCD45>></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav me-auto"> 
+                    </div>
+                    <div class="navbar-nav"> 
+                        <a class="nav-link active" aria-current="page" href="#home" style=" color: rgb(125, 95, 180)">Home</a>
+                        <a class="nav-link" href="#about" style=" color: rgb(125, 95, 180)">About Me</a>
+                        <a class="nav-link" href="#skills" style=" color: rgb(125, 95, 180)">Skills</a>
+                        <a class="nav-link" href="#projects" style=" color: rgb(125, 95, 180)">Projects</a>
+                        <a class="nav-link" href="#contact" style=" color: rgb(125, 95, 180)">Contact Me</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        
+
+          <br><br><br>
+    </header>
+    <main>
+
+
+            <section id="home">
+                <div class="container">
+                    <div class="avatar"> <img src="my-avatar.png" alt="myprofilepic"></div>
+                    <div class="heading fst-italic"> <header><h1>Hi! My Name is <span style="color: rgb(13, 149, 240); font-family: cursive;">Vishnu Vardhan Lekkala</span></h1></header></div>
+                  </div>
+                  <div class="role"><h3>Web Developer</h3></div>
+        
+                  <div class="paragraph"><p>As a B.Tech graduate with a passion for technology and a keen interest in web development. </p></div>
+        
+                   <br>
+                   <a href="https://docs.google.com/document/d/1QA61Xw9NbM7tJftosq5P33uDZzVMK2pq/export?format=pdf" download="resume.pdf" class="btn" style="color: rgb(125, 95, 180); background-color: aliceblue; margin-left: 350px;">Download Resume <span>&#x2B07;</span></a>
+        
+                    <div class="icons" style="margin-left: 34px;">
+                        <ul class="social-list"> 
+                            <li class="facebook"><a href="https://www.facebook.com/chinnudarling45"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                            <li class="instagram"><a href="https://www.instagram.com/im_chinnudarling45/"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                            <li class="github"><a href="https://github.com/Vishnuvardhanl45"><ion-icon name="logo-github"></ion-icon></a></li>
+        
+                        </ul>
+                    </div>
+                    <br><br>
+            </section>
+    
+            <section id="about">
+                <div class="about" ><header><h3>About Me</h3></header></div>
+                <br><br>
+    
+                <div class="aboutme">
+                    <div class="history"><p>I am a B.Tech graduate with a strong interest and proficiency in web development.
+                        <br> Throughout my academic journey, I have developed a solid foundation in computer science fundamentals,
+                        <br> programming languages, and software engineering principles.
+                        </p>
+                    
+                    </div>
+                  
+    
+                    <div class="profile"> <img src="MyProfilePic.jpg" alt="myprofilepic"></div>
+                </div>
+                <br><br>
+                 
+         
+                
+    
+                <div class="values"> 
+                    <h3>0+</h3>
+                    <h3>5+</h3>
+                    <h3>10+</h3>
+                    <br>
+                </div>
+    
+                <div class="keys">
+                <div class="key1">
+                    years <br>Experience
+                </div>
+                <div class="keys2">
+                    Projects <br>
+                    Completed
+                </div>
+                <div class="keys3">
+                Skills<br>
+                Known
+                </div>
+    
+                </div>
+                <br><br>
+            </section>
+    
+
+            <section id="skills">
+                <div class="skills" ><header><h3>Skills</h3></header></div>
+                <br><br>
+    
+    
+                <div class="bargraph">
+    
+              
+                <div class="skill">
+                    <div class="name">HTML</div>
+                    <div class="bar">
+                        <div class="progress" style="width:90%;"></div>
+                    </div>
+                    <div class="percentage">90%</div>
+                </div>
+                <div class="skill">
+                    <div class="name">CSS</div>
+                    <div class="bar">
+                        <div class="progress" style="width: 80%;"></div>
+                    </div>
+                    <div class="percentage">80%</div>
+                </div>
+                <div class="skill">
+                    <div class="name">Bootstrap</div>
+                    <div class="bar">
+                        <div class="progress" style="width: 90%;"></div>
+                    </div>
+                    <div class="percentage">90%</div>
+                </div>
+                <div class="skill">
+                    <div class="name">Thymeleaf</div>
+                    <div class="bar">
+                        <div class="progress" style="width: 70%;"></div>
+                    </div>
+                    <div class="percentage">70%</div>
+                </div>
+                
+                </div>
+    
+    
+    
+    
+    
+                <div class="bargraph">
+                    <div class="skill">
+                    <div class="name">Servlet</div>
+                    <div class="bar">
+                        <div class="progress" style="width:70%;"></div>
+                    </div>
+                    <div class="percentage">70%</div>
+                </div>
+                <div class="skill">
+                    <div class="name">Jsp</div>
+                    <div class="bar">
+                        <div class="progress" style="width: 80%;"></div>
+                    </div>
+                    <div class="percentage">60%</div>
+                </div>
+                <div class="skill">
+                    <div class="name">Java</div>
+                    <div class="bar">
+                        <div class="progress" style="width: 70%;"></div>
+                    </div>
+                    <div class="percentage">80%</div>
+                </div>
+                <div class="skill">
+                    <div class="name">Python</div>
+                    <div class="bar">
+                        <div class="progress" style="width: 70%;"></div>
+                    </div>
+                    <div class="percentage">70%</div>
+                </div>
+                </div>
+    
+    
+                <div class="bargraph">
+    
+              
+                    <div class="skill">
+                        <div class="name">MySQL</div>
+                        <div class="bar">
+                            <div class="progress" style="width:60%;"></div>
+                        </div>
+                        <div class="percentage">60%</div>
+                    </div>
+                    <div class="skill">
+                        <div class="name">Docker</div>
+                        <div class="bar">
+                            <div class="progress" style="width: 40%;"></div>
+                        </div>
+                        <div class="percentage">40%</div>
+                    </div>
+                    <div class="skill">
+                        <div class="name">Kubernetes</div>
+                        <div class="bar">
+                            <div class="progress" style="width: 40%;"></div>
+                        </div>
+                        <div class="percentage">40%</div>
+                    </div>
+                    <div class="skill">
+                        <div class="name">AWS Cloud</div>
+                        <div class="bar">
+                            <div class="progress" style="width: 40%;"></div>
+                        </div>
+                        <div class="percentage">40%</div>
+                    </div>
+                   
+                    
+                    </div>
+    
+                <br><br>
+            </section>
+    
+            <section id="projects">
+                <div class="about" ><header><h3>Projects</h3></header></div>
+                <br><br>
+
+    
+            <div class="Projects">  
+            
+            
+                    <div class="frontend">
+    
+                        <img src="frontend.png" alt="Frontend" style="width: 50px; height: 50px; font-family: monospace;">
+                   
+                            <div>
+                                <h2 style=" margin-left: 10px;color: rgb(125, 95, 180)">Frontend :</h2>
+                            </div>
+                    </div>
+                    <br>
+                
+                    <div class="projdesc1">
+                        <h4 style="margin-left: 140px;">Portfolio Website</h4><br>
+                        <h5 style="margin-left: 140px;">Description:</h5>
+                        <p style="margin-left: 140px;">Developed a personal portfolio website to showcase my skills, projects, and experiences. Built with HTML and CSS, featuring a responsive design for various screen sizes.</p>
+                        
+                    </div>
+    
+                    <div class="projdesc1">
+                        <h4 style="margin-left: 140px;">Food Store Static Website</h4><br>
+                        <h5 style="margin-left: 140px;">Description:</h5>
+                        <p style="margin-left: 140px;"> Created a frontend for an online food store, implementing a user-friendly interface for food store static website, Utilized HTML and CSS for layout and styling.</p>
+                        
+                    </div>
+                    <br>
+    
+                    <div class="backend">
+    
+                        <img src="backend.png" alt="Backend" style="width: 50px; height: 50px; font-family: monospace;">
+                   
+                            <div>
+                                <h2 style=" margin-left: 10px;color: rgb(125, 95, 180)">Backend :</h2>
+                            </div>
+                    </div>
+                    <br>
+                
+                    <div class="projdesc1">
+                        <h4 style="margin-left: 140px;">Quiz Application</h4><br>
+                        <h5 style="margin-left: 140px;">Description:</h5>
+                        <p style="margin-left: 140px;">Created a quiz application in Java, offering users the ability to take quizzes. Implemented backend functionalities using Java programming language.</p>
+                        
+                    </div>
+                    <div class="projdesc1">
+                        <h4 style="margin-left: 140px;">Expense Tracker</h4><br>
+                        <h5 style="margin-left: 140px;">Description:</h5>
+                        <p style="margin-left: 140px;">Designed and implemented an expense tracker application in Java, enabling users to track their expenses and manage budgets efficiently. Utilized Java programming language for backend logic.</p>
+                        
+                    </div>
+                    <div class="projdesc1">
+                        <h4 style="margin-left: 140px;">Text Adventure Game</h4><br>
+                        <h5 style="margin-left: 140px;">Description:</h5>
+                        <p style="margin-left: 140px;">Developed a text-based adventure game in Java, featuring interactive storytelling and decision-making. Utilized Java programming language for backend game logic.</p>
+                        
+                    </div>
+                    <div class="projdesc1">
+                        <h4 style="margin-left: 140px;">Static Currency Converter</h4><br>
+                        <h5 style="margin-left: 140px;">Description:</h5>
+                        <p style="margin-left: 140px;">Developed a static currency converter application in Java, allowing users to perform currency conversions based on predefined exchange rates. Implemented with Java programming language.</p>
+                        
+                    </div>
+                    <div class="projdesc1">
+                        <h4 style="margin-left: 140px;">URL Shortener</h4><br>
+                        <h5 style="margin-left: 140px;">Description:</h5>
+                        <p style="margin-left: 140px;">Implemented a URL shortener service in Java, allowing users to shorten long URLs into concise links. Utilized Java programming language for backend processing.</p>
+                        
+                    </div>
+    
+                    <br>
+    
+                    <div class="springboot">
+    
+                        <img src="springboot.png" alt="Springboot" style="width: 50px; height: 50px; font-family: monospace;">
+                   
+                            <div>
+                                <h2 style=" margin-left: 10px;color: rgb(125, 95, 180)">Springboot :</h2>
+                            </div>
+                    </div>
+                    <br>
+                
+                    
+                    <div class="projdesc1">
+                        <h4 style="margin-left: 140px;">Student Management System</h4><br>
+                        <h5 style="margin-left: 140px;">Description:</h5>
+                        <p style="margin-left: 140px;">Developed a student management system using Spring Boot, Thymeleaf, and Bootstrap, allowing administrators to manage student records, courses, and grades efficiently. Implemented CRUD operations for data manipulation.
+                            <br>Role: Full-stack Developer
+                            </p>
+                        
+                    </div>
+
+
+                    <div class="projdesc1">
+                        <h4 style="margin-left: 140px;">Expense Tracker</h4><br>
+                        <h5 style="margin-left: 140px;">Description:</h5>
+                        <p style="margin-left: 140px;">Created an expense tracker application using Spring Boot, Thymeleaf, and Bootstrap, allowing users to track and manage their expenses effectively.
+                         <br>Role: Full-stack Developer
+                            </p>
+                        
+                    </div>
+
+                    <div class="projdesc1">
+                        <h4 style="margin-left: 140px;">Book Store Management System
+                        </h4><br>
+                        <h5 style="margin-left: 140px;">Description:</h5>
+                        <p style="margin-left: 140px;" >Designed and implemented a book store management system using Spring Boot, Thymeleaf, and Bootstrap, enabling users to add books to cart,remove books from cart & see the list of books books online. Integrated with a database to manage book inventory.
+                            <br> Role: Full-stack Developer
+                            </p>
+                        
+                    </div>
+    
+                    <br>
+
+
+
+                    <div class="fullstack">
+    
+                        <img src="fullstack.png" alt="Full-stack" style="width: 80px; height: 80px; font-family: monospace; ">
+                   
+                            <div>
+                                <h2 style="color: rgb(125, 95, 180)">Full-Stack :</h2>
+                            </div>
+                    </div>
+                    <br>
+                
+                    <div class="projdesc1">
+                        <h4 style="margin-left: 140px;">Hospital Management System</h4><br>
+                        <h5 style="margin-left: 140px;">Description:</h5>
+                        <p style="margin-left: 140px;">In the Hospital Management System project, I undertook the development of various essential features to ensure comprehensive management of hospital operations. Here's a breakdown of the functionalities implemented: <br>
+                            1.Admin Registration and Login:
+                            Developed a secure registration module allowing administrators to create accounts.
+                            Implemented authentication mechanisms to verify the identity of administrators during login.
+                            <br>
+                            2.User Registration and Login:
+                            Designed a user-friendly registration process for hospital staff members and patients.
+                            Implemented login functionality for registered users with appropriate access controls.
+                            <br>
+                            3.Patient Management:
+                            Created features for adding, removing, and updating patient details in the system.
+                            Implemented functionalities to retrieve patient information by ID for quick access.
+                            <br>
+                            4.Doctor Management:
+                            Developed similar functionalities for managing doctors, including registration, login, and profile management.
+                            Implemented features to add, remove, and update doctor details as needed.
+                            <br>
+                            5.Appointment Booking:
+                            Designed an intuitive interface for patients to book appointments with doctors.
+                            Implemented scheduling algorithms to manage appointment slots efficiently.
+                            Integrated features for confirming appointments and sending notifications to patients and doctors.
+                            <br>
+                            6.Payment Gateway Integration:
+                            Integrated a secure payment gateway to facilitate online transactions for medical services.
+                            Implemented functionalities for processing payments, generating invoices, and recording transaction details.
+                            <br>
+                            7.Forgot Password Functionality:
+                            Developed a password recovery mechanism allowing users to reset their passwords securely.
+                            Implemented email notifications with password reset links for user convenience and security.
+                            <br><br>
+                            These functionalities were implemented using a combination of HTML, CSS, JSP, Java, MySQL, and Servlet technologies. By incorporating robust security measures, user-friendly interfaces, and efficient data management techniques, the Hospital Management System aimed to streamline administrative tasks, enhance patient care, and improve overall operational efficiency within the healthcare facility.
+                        
+                        
+                        
+                        
+                        </p>
+                        
+                    </div>
+    
+                    <br>
+
+                    <div class="projdesc1">
+                        <h4 style="margin-left: 140px;">Real Time Currency Converter</h4><br>
+                        <h5 style="margin-left: 140px;">Description:</h5>
+                        <p style="margin-left: 140px;">As part of my development role, I engineered a real-time Currency Converter, providing users with up-to-the-minute exchange rates for effortless currency conversions. Here's a detailed overview of the project:<br>
+                            1.Real-time Exchange Rates:
+                            Integrated with a reliable external API to fetch real-time currency exchange rates, ensuring accuracy and currency rate updates.
+                            <br>
+                            2.User Interface:
+                            Designed an intuitive and user-friendly interface for seamless currency conversion experiences.
+                            Implemented features such as dropdown menus for selecting currencies and input fields for entering conversion amounts.
+                            <br>
+                            3.Dynamic Conversion:
+                            Developed algorithms to perform dynamic currency conversions based on the latest exchange rates fetched from the API.
+                            Enabled users to instantly view converted amounts in their desired currencies.
+                            <br>
+                            4.Technologies Used:
+                            HTML and CSS: Crafted the frontend interface, prioritizing user experience and accessibility.
+                            JSP (JavaServer Pages): Utilized for server-side processing and dynamic content generation, facilitating interaction with the backend.
+                            Java: Implemented backend logic for fetching real-time exchange rates, performing currency conversions, and serving responses to client requests.
+                            MySQL: Utilized for storing historical exchange rate data and user preferences, enabling personalized experiences.
+                            Servlet: Managed HTTP requests and responses, ensuring smooth communication between the client and server components.
+                            <br>
+                            5.API Integration:
+                            Integrated with an external API for real-time currency exchange rates, enabling the Currency Converter to fetch the most accurate and updated rates.
+                            Implemented error handling mechanisms to gracefully manage API response errors and ensure system stability.
+                            <br>
+                            6.Role and Contributions:
+                            Spearheaded the development of the Currency Converter as a full-stack developer, overseeing both frontend and backend aspects.
+                            Collaborated with team members to design and implement key features, ensuring alignment with project goals and user requirements.
+                            Conducted thorough testing and optimization to deliver a high-performance and reliable Currency Converter solution.
+                            <br><br>
+                            Overall, the Currency Converter project aimed to provide users with a convenient and efficient tool for performing currency conversions in real-time. By leveraging cutting-edge technologies and seamless API integration, the system aimed to deliver accurate and up-to-date currency exchange rate information, empowering users to make informed financial decisions.
+                        
+                        
+                        
+                        
+                        </p>
+                        
+                    </div>
+            
+        </div>       
+    
+        <br><br>
+            </section>
+    
+            <section id="contact">
+               <footer><footer>
+                <div><p style="margin-left: 500px;">Phone no:+(91)806551482 & Email:vishnulekkala630@gmail.com</p></div>
+            </footer></footer>
+            </section>
+
+ 
+
+    </main>
+    
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        
+    </script>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</html>
